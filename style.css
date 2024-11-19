@@ -1,0 +1,51 @@
+body {
+    display: grid;
+    grid-template-columns: 30vh auto;
+    margin: 0;
+}
+
+#sidebar {
+    background: linear-gradient(111.8deg, rgb(0, 146, 219) 19.8%, rgb(0, 112, 239) 92.1%);
+    padding: 10%;
+    height: 100vh;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Roboto";
+}
+
+#sidebar-title {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 6vh);
+    grid-template-columns: 25% 70%;
+    column-gap: 5%;
+}
+
+#sidebar-title > i {
+    margin: auto;
+    font-size: 5vh;
+}
+
+#sidebar-title > h3 {
+    margin: auto 0;
+    font-size: 3vh;
+}
+
+#sidebar-links {
+    display: grid;
+    grid-template-rows: repeat(auto, 6vh);
+    grid-template-columns: 20% 75%;
+    column-gap: 2%;
+    row-gap: 10%;
+}
+
+#sidebar-links i {
+    margin: auto;
+    font-size: 2vh;
+    grid-column: 1;
+}
+
+#sidebar-links h3 {
+    margin: auto 0;
+    font-size: 2vh;
+    grid-column: 2;
+}
