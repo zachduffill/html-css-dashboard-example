@@ -1,6 +1,11 @@
+:root {
+    --grey: rgb(209, 221, 236);
+}
+
 body {
     display: grid;
     grid-template-columns: 30vh auto;
+    grid-template-rows: 18vh auto;
     margin: 0;
 }
 
@@ -11,6 +16,9 @@ body {
     box-sizing: border-box;
     color: white;
     font-family: "Roboto";
+    grid-row-start: 0;
+    grid-row-end: -2;
+    z-index: 3;
 }
 
 #sidebar-title {
@@ -47,5 +55,55 @@ body {
 #sidebar-links h3 {
     margin: auto 0;
     font-size: 2vh;
+    font-weight: 400;
     grid-column: 2;
+}
+
+#workspace {
+    background-color: var(--grey);
+}
+
+#activity-bar {
+    background-color: white;
+    box-shadow: 0 1px 6px rgb(146, 146, 146);
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 40% 50%;
+    row-gap: 10%;
+}
+
+#search-bar {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px 50px;
+
+    display: flex;
+    /* grid-template-rows: 100%;
+    grid-template-columns: 5% 90%; */
+}
+
+#search-bar i {
+    margin: auto;
+    padding-right: 15px;
+    font-size: 2vh;
+    /* grid-column: 0; */
+}
+
+#search-bar input {
+    margin: auto;
+    background-color: var(--grey);
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+    flex-grow: 1;
+    /* grid-column: 2; */
 }
