@@ -22,10 +22,13 @@ body {
 }
 
 #sidebar-title {
-    display: grid;
-    grid-template-rows: repeat(auto-fill, 6vh);
-    grid-template-columns: 25% 70%;
-    column-gap: 5%;
+    display: flex;
+    /* grid-template-rows: repeat(auto-fill, 6vh);
+    grid-template-columns: 25% 70%; */
+    background-color: rgba(255, 255, 255, 0.116);
+    border: 0;
+    border-radius: 3vmin;
+    padding: 5%;
 }
 
 #sidebar-title > i {
@@ -34,7 +37,7 @@ body {
 }
 
 #sidebar-title > h3 {
-    margin: auto 0;
+    margin: auto;
     font-size: 3vh;
 }
 
@@ -71,7 +74,7 @@ body {
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: 40% 50%;
-    row-gap: 15%;
+    row-gap: 20%;
     padding: max(1.2vh,15px) max(3%,5px) max(3vh,15px);
     box-sizing: border-box;
 }
@@ -82,7 +85,7 @@ body {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: max(1%, 10px) 0;
+    padding: max(1%, 0px) 0;
 
     display: flex;
     gap: max(1%,5px);
@@ -113,7 +116,7 @@ body {
     grid-column: 2;
     width: 100%;
     height: 100%;
-    padding: max(1.5%, 10px) 0 5px max(20%, 10px);
+    padding: max(1.5%, 0px) 0 5px max(25%, 0px);
     box-sizing: border-box;
 
     display: flex;
@@ -126,6 +129,7 @@ body {
     font-family: "Roboto";
     font-size:1vw;
     margin: auto;
+    margin-right: 0;
     text-align: center;
 }
 
