@@ -69,9 +69,11 @@ body {
     z-index: 2;
 
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 75% 25%;
     grid-template-rows: 40% 50%;
     row-gap: 10%;
+    padding-top: max(1.2vh,15px);
+    padding-right: max(3%,5px);
 }
 
 #search-bar {
@@ -80,9 +82,10 @@ body {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 25px 50px;
+    padding: max(1.5%, 10px) max(4%,10px);
 
     display: flex;
+    gap: 5px;
     /* grid-template-rows: 100%;
     grid-template-columns: 5% 90%; */
 }
@@ -97,7 +100,6 @@ body {
 #search-bar input {
     margin: auto;
     background-color: var(--grey);
-    padding: 10px;
     border: none;
     border-radius: 30px;
     height: 100%;
@@ -106,4 +108,64 @@ body {
 
     flex-grow: 1;
     /* grid-column: 2; */
+}
+
+#profile-corner {
+    grid-row: 1;
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+    padding: max(1.5%, 10px) 0 5px max(20%, 10px);
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    overflow:hidden;
+}
+
+#profile-corner h3 {
+    font-family: "Roboto";
+    font-size:1vw;
+    margin: auto;
+    text-align: center;
+}
+
+#profile-corner i {
+    font-size: 2.5vh;
+    margin: auto;
+}
+
+.profile-pic {
+    aspect-ratio: 1;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#profile-welcome {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+}
+
+#profile-welcome img {
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column: 0;
+    height: 50px;
+    width: 50px;
+}
+#profile-welcome h4 {
+    grid-row: 0;
+    grid-column: 1;
+}
+#profile-welcome h3 {
+    grid-row: 1;
+    grid-column: 1;
 }
