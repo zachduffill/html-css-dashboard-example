@@ -121,14 +121,14 @@ body {
 
     display: flex;
     flex-direction: row-reverse;
-    gap: 5px;
+    gap: max(10px,5%);
     overflow:hidden;
 }
 
 #profile-corner h3 {
     font-family: "Roboto";
-    font-size:1vw;
-    margin: auto;
+    font-size:1.5vh;
+    margin: auto 0;
     margin-right: 0;
     text-align: center;
 }
@@ -141,7 +141,7 @@ body {
 .profile-pic {
     aspect-ratio: 1;
     height: 100%;
-    width: auto;
+    width: auto 0;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -166,12 +166,12 @@ body {
 #profile-welcome h4 {
     grid-row: 1;
     grid-column: 2;
-    font-size:0.8vw;
+    font-size:1.6vh;
     margin: auto 0;
 }
 #profile-welcome h3 {
     grid-row: 2;
     grid-column: 2;
-    font-size:1.5vw;
+    font-size:3vh;
     margin: auto 0;
 }
