@@ -334,10 +334,12 @@ body {
     flex-direction: column;    
     padding: max(2px,1%) max(2px,5%);
     box-sizing: border-box;
+}
 
+#announcements-pane > h3 {
     font-family: "Roboto";
     font-size: max(7px,1vw);
-    font-weight: normal;
+    font-weight: 400;
 }
 
 #trending-pane {
@@ -345,6 +347,16 @@ body {
     border-radius: 1vmin;
     width: 100%;
     flex-grow: 1;
+    overflow: hidden;
 
     box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.055);
+    box-sizing: border-box;
+
+    padding: max(2px,1%) max(2px,5%);
+}
+
+#trending-pane > h3 {
+    font-family: "Roboto";
+    font-size: max(7px,1vw);
+    font-weight: 400;
 }
