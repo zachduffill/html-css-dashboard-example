@@ -204,29 +204,34 @@ body {
 
     background-color: var(--grey);
     display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 69% 29%;
+    grid-template-rows: 47.5% 47.5%;
+    row-gap: 5%;
+    column-gap: 2%;
+    
+    padding: max(5px,2%);
+    box-sizing: border-box;
 }
 
 #workspace > div {
     width: 100%;
     height: 100%;
-    padding: max(5px,1%) max(10px,2.5%);
     box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
 }
 
 #workspace > div > h3 {
     font-family: "Roboto";
     font-size: 1.2vw;
-    margin-bottom: max(2px,1.25%);
+    margin-bottom: max(2px,1.5vh);
+    margin-top: 0;
 }
 
 #projects {
     grid-column: 1;
     grid-row: span 2;
-
-    display: flex;
-    flex-direction: column;
 }
 
 #projects > div {
@@ -241,10 +246,11 @@ body {
     max-height: max-content;
     overflow-y: scroll;
     overflow-x: hidden;
-    margin-bottom: max(10px,2%);
 
     -ms-overflow-style: none;  
     scrollbar-width: none;
+
+    border-radius: 1vmin;
 }
 
 #projects > div::-webkit-scrollbar {
@@ -262,6 +268,7 @@ body {
     display: grid;
     grid-template-columns: max(3px,2%) auto;
     grid-template-rows: 80% 20%;
+    box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.055);
 }
 
 #color-line {
@@ -313,4 +320,31 @@ body {
     padding: 0 max(2px,5%);
     padding-bottom: max(2px,5%);
     box-sizing: border-box;
+}
+
+#announcements-pane {
+    background-color: white;
+    border-radius: 1vmin;
+    width: 100%;
+    flex-grow: 1;
+
+    box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.055);
+
+    display: flex;
+    flex-direction: column;    
+    padding: max(2px,1%) max(2px,5%);
+    box-sizing: border-box;
+
+    font-family: "Roboto";
+    font-size: max(7px,1vw);
+    font-weight: normal;
+}
+
+#trending-pane {
+    background-color: white;
+    border-radius: 1vmin;
+    width: 100%;
+    flex-grow: 1;
+
+    box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.055);
 }
